@@ -161,7 +161,7 @@
     </folder>
     <configuration
       Name="Release"
-      linker_printf_fmt_level="long"
+      linker_printf_fmt_level="int"
       linker_scanf_fmt_level="int" />
   </project>
   <configuration
