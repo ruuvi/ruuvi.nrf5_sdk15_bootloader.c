@@ -1,3 +1,6 @@
 [submodule "ruuvi.boards.c"]
 	path = ruuvi.boards.c
 	url = https://github.com/ruuvi/ruuvi.boards.c.git
+[submodule "ruuvi.nrf_sdk15_3_overrides.c"]
+	path = ruuvi.nrf_sdk15_3_overrides.c
+	url = https://github.com/ruuvi/ruuvi.nrf_sdk15_3_overrides.c.git
