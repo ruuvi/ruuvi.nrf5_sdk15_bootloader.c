@@ -110,19 +110,13 @@ static void dfu_observer(nrf_dfu_evt_type_t evt_type)
             bsp_board_init(BSP_INIT_LEDS);
             bsp_board_led_on(BSP_BOARD_LED_0);
             #endif
-            #if( RUUVI_BOARD_LEDS_NUMBER > 1)
-            bsp_board_led_on(BSP_BOARD_LED_1);
-            #endif
-            #if( RUUVI_BOARD_LEDS_NUMBER > 2)
-            bsp_board_led_off(BSP_BOARD_LED_2);
-            #endif
             break;
         case NRF_DFU_EVT_TRANSPORT_ACTIVATED:
-            #if( RUUVI_BOARD_LEDS_NUMBER > 1)
-            bsp_board_led_off(BSP_BOARD_LED_1);
+            #if( RUUVI_BOARD_LEDS_NUMBER > 0)
+            bsp_board_led_off(BSP_BOARD_LED_0);
             #endif
-            #if( RUUVI_BOARD_LEDS_NUMBER > 2)
-            bsp_board_led_on(BSP_BOARD_LED_2);
+            #if( RUUVI_BOARD_LEDS_NUMBER > 1)
+            bsp_board_led_on(BSP_BOARD_LED_1);
             #endif
             break;
         case NRF_DFU_EVT_DFU_STARTED:
